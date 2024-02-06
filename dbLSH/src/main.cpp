@@ -96,7 +96,8 @@ int main(int argc, char const* argv[])
 	// 	std::string data_fold = "E:/Dataset_for_c/", index_fold = "";
 	// #endif
 	std::string data_fold = "/data/kabir/similarity-search/dataset/", index_fold = "";
-	Preprocess prep(k, data_fold + datasetName + "/", data_fold + "ANN/" + datasetName + ".bench");
+	std::string data_fold_2 = "./../dataset/";
+	Preprocess prep(k, data_fold + datasetName + "/", data_fold_2 + "ANN/" + datasetName + ".bench");
 
 	showMemoryInfo();
 
