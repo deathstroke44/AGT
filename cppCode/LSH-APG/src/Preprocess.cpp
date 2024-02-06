@@ -156,6 +156,7 @@ void Preprocess::load_data(const std::string& path)
 	}
 <<<<<<< HEAD:cppCode/LSH-APG/src/Preprocess.cpp
 <<<<<<< HEAD:cppCode/LSH-APG/src/Preprocess.cpp
+<<<<<<< HEAD:cppCode/LSH-APG/src/Preprocess.cpp
 >>>>>>> efb3637 (make changes for our experiments paradigms):dbLSH/src/Preprocess.cpp
 =======
 =======
@@ -167,6 +168,9 @@ void Preprocess::load_data(const std::string& path)
 		}
 	}
 >>>>>>> 51f19ad (debugging):dbLSH/src/Preprocess.cpp
+=======
+
+>>>>>>> b0f9918 (Fixed bugs):dbLSH/src/Preprocess.cpp
 
 	std::cout << "Load from new file: " << path << "\n";
 	std::cout << "N=    " << data.N << "\n";
