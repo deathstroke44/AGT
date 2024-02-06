@@ -96,6 +96,7 @@ vector<vector<float>> readFVecsFromExternal(string filepath, int maxRow=-1) {
 
 void Preprocess::load_data(const std::string& path)
 {
+<<<<<<< HEAD:cppCode/LSH-APG/src/Preprocess.cpp
 	std::string file = path + "_new";
 	std::ifstream in(file.c_str(), std::ios::binary);
 	while (!in) {
@@ -131,6 +132,8 @@ void Preprocess::load_data(const std::string& path)
 	data.val = &(data.query[MaxQueryNum]);
 	data.N -= MaxQueryNum;
 =======
+=======
+>>>>>>> a908c48 (Fixed some bugs):dbLSH/src/Preprocess.cpp
 	vector<vector<float>> base = readFVecsFromExternal(path+"base.fvecs");
 	data.N = base.size();
 	data.dim = base[0].size();
@@ -153,13 +156,12 @@ void Preprocess::load_data(const std::string& path)
 	}
 >>>>>>> efb3637 (make changes for our experiments paradigms):dbLSH/src/Preprocess.cpp
 
-	std::cout << "Load from new file: " << file << "\n";
+	std::cout << "Load from new file: " << path << "\n";
 	std::cout << "N=    " << data.N << "\n";
 	std::cout << "dim=  " << data.dim << "\n\n";
+	std::cout << "Qnum=  " << data.numQuery << "\n\n";
 	std::cout << "size of base=  " << sizeof(&(data.val)) << "\n\n";
 	std::cout << "size of query=  " << sizeof(&(data.query)) << "\n\n";
-
-	in.close();
 }
 
 struct Tuple
