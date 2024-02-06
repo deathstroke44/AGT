@@ -154,7 +154,15 @@ void Preprocess::load_data(const std::string& path)
 			data.val[i][j]=query[i][j];
 		}
 	}
+<<<<<<< HEAD:cppCode/LSH-APG/src/Preprocess.cpp
 >>>>>>> efb3637 (make changes for our experiments paradigms):dbLSH/src/Preprocess.cpp
+=======
+	for (int i = 0; i < data.numQuery; ++i) {
+		for (int j=0;j<query[i].size();j++) {
+			float t = data.val[i][j]=query[i][j];
+		}
+	}
+>>>>>>> 51f19ad (debugging):dbLSH/src/Preprocess.cpp
 
 	std::cout << "Load from new file: " << path << "\n";
 	std::cout << "N=    " << data.N << "\n";
