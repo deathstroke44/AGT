@@ -147,6 +147,7 @@ void lshknn(float c, int k, Hash& myslsh, Preprocess& prep, float beta, std::str
 	//std::cout << "SORT TIME:         " << ((float)perform.time_sift) / (perform.num) << std::endl;
 	//std::cout << "AVG QUERY TIME:    " << (float)perform.time_verify / perform.num * 1000 << "ms." << std::endl << std::endl;
 	std::cout << "AVG RECALL:        " << ((float)perform.NN_num) / (perform.num * k) << std::endl;
+	std::cout << "AVG MAP:        " << ((float)perform.MAP) / (perform.num) << std::endl;
 	std::cout << (float)perform.NN_num <<" "<< (perform.num * k) <<" " <<k<< std::endl;
 	std::cout << "AVG RATIO:         " << ((float)perform.ratio) / (perform.res_num) << std::endl;
 	std::cout << "AVG COST:          " << ((float)perform.cost) / ((float)perform.num * prep.data.N) << std::endl;
